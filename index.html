@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Space Clicker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<p>Counter</hp>
+<h1>Counter</h1>
+
+    <script type="text/javascript">
+
+    var clicks = 0;
+    function hello() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+    </script>
+
+<script type="text/javascript">
+
+    var clicks = 0;
+    function bye() {
+        clicks -= 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+    </script>
+
+    <a id="clicks"><b></b>0</b></a>
+    <br>
+    <button type="button" onclick="hello()">Increase</button>
+    <button type="button" onclick="bye()">Decrease</button>
+    
+
+</body>
+</html>
